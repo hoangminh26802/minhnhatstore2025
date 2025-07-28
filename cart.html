@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giỏ Hàng - Minh Nhật Store</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+
+  <body onload="loadCart()">
+    <header>
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="./anh/481780866_122093212556802956_3033451504716178783_n.jpg"
+            alt="Logo shop"
+            class="logo"
+            width="50"
+          />
+          <span class="brand-name">Minh Nhật Store</span>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="sanpham.html">Sản Phẩm</a></li>
+            <li><a href="lienhe.html">Liên Hệ</a></li>
+            <li>
+              <a href="cart.html"
+                >🛒 Giỏ hàng (<span id="cartCount">0</span>)</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>🛒 Giỏ Hàng Của Bạn</h1>
+      <div id="cartItems"></div>
+      <div class="cart-summary" id="cartSummary"></div>
+
+      <div class="checkout-form" id="checkoutForm" style="display: none">
+        <h2>Thông Tin Thanh Toán</h2>
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" placeholder="Nhập họ và tên" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Nhập email" />
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" placeholder="Nhập số điện thoại" />
+
+        <label for="address">Địa chỉ nhận hàng:</label>
+        <textarea id="address" rows="3" placeholder="Nhập địa chỉ"></textarea>
+
+        <button onclick="submitOrder()">Thanh Toán</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Minh Nhật Store | Liên hệ: 0909-xxx-xxx | Email:
+        contact@minhnhat.vn
+      </p>
+    </footer>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

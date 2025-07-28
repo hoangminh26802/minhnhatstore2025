@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Minh Nhật Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="./anh/481780866_122093212556802956_3033451504716178783_n.jpg"
+            alt="Logo shop"
+            class="logo"
+          />
+          <span class="brand-name">Minh Nhật Store</span>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="sanpham.html" target="_blank">Sản Phẩm</a></li>
+            <li><a href="lienhe.html" target="_blank">Liên Hệ</a></li>
+            <li>
+              <a href="cart.html"
+                >🛒 Giỏ hàng (<span id="cartCount">0</span>)</a
+              >
+            </li>
+            <li><a href="login.html">Đăng nhập</a></li>
+           <li><a href="register.html">Đăng ký</a></li>
+           <li><a href="#" id="logoutBtn" style="display:none;">Đăng xuất</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="highlight">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-list">
+          <div class="product">
+            <img src="./anh/ip.jpg" alt="Iphone 11" />
+            <h3 title="Iphone 11 Quốc tế 64GB">iPhone 11</h3>
+            <p>Giá: <strong>7.000.000đ</strong></p>
+            <p>64GB | Quốc tế | Mới 98%</p>
+            <button onclick="addToCart('Iphone 11', 7000000)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="product-list">
+          <div class="product">
+            <img src="./anh/oppo.jpg" alt="Oppo A56 5G"/>
+            <h3 title="Oppo A56 5G FULLBOX Ram 8/256">Oppo A56 5G</h3>
+            <p>Giá: <strong>2.xxx.xxxđ</strong></p>
+            <p>Oppo A56 5G FULLBOX Ram 8/256
+              🔥Hỗ Trợ 2 sim mạng 5G
+              ✅Pin khủng 5000, cấu hình mạnh
+              ✅️Chơi game Liên quân, Pubg thoải mái k giật lag
+              ✅Tặng Bộ Sạc, ốp lưng, cường lực.</p>
+            <button onclick="addToCart('Iphone 11', 7000000)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="product">
+            <img src="./anh/android.jpg" alt="Xiaomi 14" />
+            <h3 title="Xiaomi 14 Chính hãng">Xiaomi 14</h3>
+            <p>Giá: <strong>5.000.000đ</strong></p>
+            <p>8GB RAM | Chính hãng | BH 12 tháng</p>
+            <button onclick="addToCart('Xiaomi 14', 5000000)">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Minh Nhật Store | Liên hệ: 0909-xxx-xxx | Email:
+        contact@minhnhat.vn
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

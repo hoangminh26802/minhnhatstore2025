@@ -1,0 +1,262 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff5f5; /* nền trắng hồng nhạt cho dễ chịu */
+  color: #333;
+}
+
+header {
+  background: #b30000; /* đỏ đậm hơn, đồng bộ navbar */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff7f7f; /* đỏ nhạt khi hover */
+}
+
+main {
+  padding: 30px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px #f8022beb;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.product:hover {
+  border-color: #b30000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgb(195 38 64 / 0.3);
+}
+
+button {
+  background-color: #b30000; /* đỏ chủ đạo */
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #b30000; /* đỏ đậm khi hover */
+}
+
+footer {
+  text-align: center;
+  background: #b30000;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Navbar nâng cấp */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #b30000, #b30000); /* gradient đỏ */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  user-select: none;
+}
+
+.nav-menu a:hover {
+  color: #b30000;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.form-container {
+  max-width: 320px;
+  margin: 80px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background: #c32640;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.form-container button:hover {
+  background: #8b1f2a;
+}
+
+.form-container p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+.form-container a {
+  color: #c32640;
+  text-decoration: none;
+  font-weight: 600;
+}
+.form-container a:hover {
+  text-decoration: underline;
+}
+/* Các link Đăng nhập / Đăng ký / Đăng xuất nhỏ gọn trong navbar */
+.nav-menu li.auth-link {
+  margin-left: 15px;
+}
+
+.nav-menu li.auth-link a,
+#logoutBtn {
+  font-size: 0.85rem; /* chữ nhỏ hơn */
+  padding: 6px 12px; /* padding nhỏ gọn */
+  border-radius: 20px; /* bo góc mềm mại */
+  background-color: #c32640;
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  display: inline-block;
+}
+
+.nav-menu li.auth-link a:hover,
+#logoutBtn:hover {
+  background-color: #8b1f2a;
+  color: white !important;
+}
+
+/* Nếu là nút đăng xuất */
+#logoutBtn {
+  border: none;
+  outline: none;
+}
+
+/* Thu nhỏ khi màn hình nhỏ */
+@media screen and (max-width: 768px) {
+  .nav-menu li.auth-link a,
+  #logoutBtn {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
