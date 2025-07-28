@@ -153,15 +153,30 @@ footer {
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
-  .product-list {
+@media (max-width: 600px) {
+  .navbar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .checkout-form input,
+  .checkout-form textarea {
+    font-size: 16px;
   }
 
   .product {
-    width: 90%;
+    font-size: 15px;
   }
+
+  .brand-name {
+    font-size: 1.1em;
+  }
+}
 }
 html {
   scroll-behavior: smooth;
